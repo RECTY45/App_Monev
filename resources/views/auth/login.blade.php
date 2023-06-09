@@ -14,7 +14,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Login Basic - Pages | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    <title>{{ $title }}</title>
 
     <meta name="description" content="" />
 
@@ -122,10 +122,10 @@
                 </a>
               </div>
               <!-- /Logo -->
-              <h4 class="mb-2">Welcome to Sneat! ðŸ‘‹</h4>
+              <h4 class="mb-2">Welcome to {{ $name }}‹</h4>
               <p class="mb-4">Please sign-in to your account and start the adventure</p>
 
-              <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
+              <form id="formAuthentication" class="mb-3" action="{{ route('dash.index') }}" method="GET">
                 <div class="mb-3">
                   <label for="email" class="form-label">Email or Username</label>
                   <input
